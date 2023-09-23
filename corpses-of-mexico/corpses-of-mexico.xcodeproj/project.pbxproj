@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B5C574B2ABF6CC300CCC77A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B5C57482ABF6CC300CCC77A /* 1.jpg */; };
+		8B5C574C2ABF6CC300CCC77A /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8B5C57492ABF6CC300CCC77A /* 2.jpeg */; };
+		8B5C574D2ABF6CC300CCC77A /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B5C574A2ABF6CC300CCC77A /* 3.jpg */; };
 		8B9541CF2ABB1CBB009A0A9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9541CE2ABB1CBB009A0A9D /* AppDelegate.swift */; };
 		8B9541D12ABB1CBB009A0A9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9541D02ABB1CBB009A0A9D /* SceneDelegate.swift */; };
 		8B9541D32ABB1CBB009A0A9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9541D22ABB1CBB009A0A9D /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B5C57482ABF6CC300CCC77A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		8B5C57492ABF6CC300CCC77A /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		8B5C574A2ABF6CC300CCC77A /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		8B9541CB2ABB1CBB009A0A9D /* corpses-of-mexico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "corpses-of-mexico.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9541CE2ABB1CBB009A0A9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B9541D02ABB1CBB009A0A9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B5C57472ABF6CB700CCC77A /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				8B5C57482ABF6CC300CCC77A /* 1.jpg */,
+				8B5C57492ABF6CC300CCC77A /* 2.jpeg */,
+				8B5C574A2ABF6CC300CCC77A /* 3.jpg */,
+			);
+			path = Pictures;
+			sourceTree = "<group>";
+		};
 		8B9541C22ABB1CBB009A0A9D = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +72,7 @@
 		8B9541CD2ABB1CBB009A0A9D /* corpses-of-mexico */ = {
 			isa = PBXGroup;
 			children = (
+				8B5C57472ABF6CB700CCC77A /* Pictures */,
 				8B9541E42ABB1D21009A0A9D /* Files */,
 				8B9541E32ABB1D14009A0A9D /* ViewControllers */,
 				8B9541E22ABB1D03009A0A9D /* Storyboards */,
@@ -149,7 +166,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5C574C2ABF6CC300CCC77A /* 2.jpeg in Resources */,
 				8B9541DB2ABB1CBC009A0A9D /* LaunchScreen.storyboard in Resources */,
+				8B5C574B2ABF6CC300CCC77A /* 1.jpg in Resources */,
+				8B5C574D2ABF6CC300CCC77A /* 3.jpg in Resources */,
 				8B9541D82ABB1CBC009A0A9D /* Assets.xcassets in Resources */,
 				8B9541D62ABB1CBB009A0A9D /* Main.storyboard in Resources */,
 			);
