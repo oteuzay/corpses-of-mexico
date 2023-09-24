@@ -8,26 +8,12 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         
         configureNavigation()
-        loadPictures()
+        self.pictures = FileOperator().getFiles(fileTypes: [".jpeg", ".jpg"])
     }
     
     func configureNavigation() -> Void {
         self.title = "Corpses of Mexico"
         navigationController?.navigationBar.prefersLargeTitles = true
-    }
-    
-    func loadPictures() -> Void {
-        let fm = FileManager.default
-        let path = Bundle.main.resourcePath!
-        let pictures = try! fm.contentsOfDirectory(atPath: path)
-        
-        for picture in pictures {
-            if picture.hasSuffix(".jpeg") || picture.hasSuffix(".jpg") {
-                self.pictures.append(picture)
-            }
-        }
-        
-        self.pictures.sort()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
