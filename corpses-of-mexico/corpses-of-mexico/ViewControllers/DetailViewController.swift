@@ -8,5 +8,18 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureNavigation()
+        imageToLoad(selectedImage: selectedImage)
+    }
+    
+    private func configureNavigation() -> Void {
+        self.title = "Picture"
+    }
+    
+    private func imageToLoad(selectedImage: String?) -> Void {
+        if let imageToLoad = selectedImage {
+            imageView.image  = UIImage(named: imageToLoad)
+        }
     }
 }
