@@ -13,6 +13,7 @@ class ViewController: UITableViewController {
     
     func configureNavigation() -> Void {
         self.title = "Corpses of Mexico"
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     func loadPictures() -> Void {
