@@ -15,6 +15,7 @@ class DetailViewController: UIViewController {
     
     private func configureNavigation() -> Void {
         self.title = "Picture"
+        navigationItem.largeTitleDisplayMode = .never
     }
     
     override func viewWillAppear(_ animated: Bool) {
