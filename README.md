@@ -1,6 +1,6 @@
 # Corpses of Mexico
 
-This application has been created to demonstrate the simple usage of `Table View` and `FileManager`.
+This application has been created to demonstrate the simple usage of `UITableView` and `FileManager`.
 
 ## Screens
 
