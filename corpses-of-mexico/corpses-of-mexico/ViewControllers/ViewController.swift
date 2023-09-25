@@ -8,7 +8,7 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         
         configureNavigation()
-        self.pictures = FileOperator().getFiles(fileTypes: [".jpeg", ".jpg"])
+        self.pictures = FileOperator().getFiles(fileFormats: [".jpeg", ".jpg"])
     }
     
     func configureNavigation() -> Void {
@@ -24,17 +24,34 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
         var config = cell.defaultContentConfiguration()
         
-        config.text = pictures[indexPath.row]
+        if let (name, format) = 🪚(📁: pictures[indexPath.row]) {
+            config.text = name
+            config.secondaryText = "File Format: .\(format)"
+        } else {
+            config.text = "Unknown"
+            config.textProperties.color = .red
+        }
+        
         cell.contentConfiguration = config
-
+        
         return cell
     }
-    
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
             
             vc.selectedImage = self.pictures[indexPath.row]
             navigationController?.pushViewController(vc, animated: true)
         }
+    }
+
+    func 🪚(📁: String) -> (String, String)? {
+        let components = 📁.components(separatedBy: ".")
+        
+        guard components.count == 2 else {
+            return nil
+        }
+        
+        return (components[0], components[1])
     }
 }
